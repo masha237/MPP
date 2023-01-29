@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="mpp.stackWithElimination.TreiberStackWithEliminationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-01-18T22:40:29" hostname="masha-Lenovo-ideapad-530S-15IKB" time="274.292">
+  <properties/>
+  <testcase name="stressTest" classname="mpp.stackWithElimination.TreiberStackWithEliminationTest" time="144.762"/>
+  <testcase name="modelCheckingTest" classname="mpp.stackWithElimination.TreiberStackWithEliminationTest" time="129.529"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LockFreedomTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-19T04:13:49" hostname="masha-Lenovo-ideapad-530S-15IKB" time="5.062">
+  <properties/>
+  <testcase name="testLockFreedom" classname="LockFreedomTest" time="5.062"/>
+  <system-out><![CDATA[=== LockFreedomTest
+--- 0: Performed 0 operations
+--- 1: Performed 2475 operations (pause/resumes 8)
+--- 2: Performed 2573 operations (pause/resumes 9)
+--- 3: Performed 2983 operations (pause/resumes 10)
+--- 4: Performed 3409 operations (pause/resumes 11)
+--- 5: Performed 3698 operations (pause/resumes 12)
+------ Done with 3702 operations (pause/resumes 13)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

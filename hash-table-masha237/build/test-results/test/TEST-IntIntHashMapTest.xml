@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IntIntHashMapTest" tests="2" skipped="0" failures="2" errors="0" timestamp="2023-01-21T17:32:43" hostname="masha-Lenovo-ideapad-530S-15IKB" time="23.14">
+  <properties/>
+  <testcase name="stressTest" classname="IntIntHashMapTest" time="13.42">
+    <failure message="org.jetbrains.kotlinx.lincheck.LincheckAssertionError: &#10;= Invalid execution results =&#10;Parallel part:&#10;| get(5): 0 [-,-,1] | remove(5): 0 | put(5, 10): 0 |&#10;---&#10;values in &quot;[..]&quot; brackets indicate the number of completed operations &#10;in each of the parallel threads seen at the beginning of the current operation&#10;---&#10;" type="org.jetbrains.kotlinx.lincheck.LincheckAssertionError">org.jetbrains.kotlinx.lincheck.LincheckAssertionError: 
+= Invalid execution results =
+Parallel part:
+| get(5): 0 [-,-,1] | remove(5): 0 | put(5, 10): 0 |
+---
+values in &quot;[..]&quot; brackets indicate the number of completed operations 
+in each of the parallel threads seen at the beginning of the current operation
+---
+
+	at app//org.jetbrains.kotlinx.lincheck.LinChecker.check(LinChecker.kt:50)
+	at app//org.jetbrains.kotlinx.lincheck.LinChecker$Companion.check(LinChecker.kt:210)
+	at app//org.jetbrains.kotlinx.lincheck.LinCheckerKt.check(LinChecker.kt:223)
+	at app//IntIntHashMapTest.stressTest(IntIntHashMapTest.kt:53)
+	at java.base@18.0.2.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@18.0.2.1/java.lang.reflect.Method.invoke(Method.java:577)
+	at app//org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at app//org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at app//org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at app//org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at app//org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at app//org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at app//org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at app//org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at app//org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at app//org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base@18.0.2.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@18.0.2.1/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <testcase name="modelCheckingTest" classname="IntIntHashMapTest" time="9.72">
+    <failure message="org.jetbrains.kotlinx.lincheck.LincheckAssertionError: &#10;= Invalid execution results =&#10;Parallel part:&#10;| get(5): 0 [-,1,1] | remove(5): 0 | put(5, 10): 0 |&#10;---&#10;values in &quot;[..]&quot; brackets indicate the number of completed operations &#10;in each of the parallel threads seen at the beginning of the current operation&#10;---&#10;&#10;= The following interleaving leads to the error =&#10;Parallel part trace:&#10;|                      |                                                                                                  | put(5, 10)                                                                               |&#10;|                      |                                                                                                  |   put(5,10): 0 at IntIntHashMapTest.put(IntIntHashMapTest.kt:22)                         |&#10;|                      |                                                                                                  |     putAndRehashWhileNeeded(5,10): 0 at IntIntHashMap.put(IntIntHashMap.kt:33)           |&#10;|                      |                                                                                                  |       core.READ: Core@1 at IntIntHashMap.putAndRehashWhileNeeded(IntIntHashMap.kt:50)    |&#10;|                      |                                                                                                  |       putInternal(5,10): 0 at IntIntHashMap.putAndRehashWhileNeeded(IntIntHashMap.kt:50) |&#10;|                      |                                                                                                  |         READ: 0 at IntIntHashMap$Core.putInternal(IntIntHashMap.kt:84)                   |&#10;|                      |                                                                                                  |         READ: 0 at IntIntHashMap$Core.putInternal(IntIntHashMap.kt:85)                   |&#10;|                      |                                                                                                  |         WRITE(5) at IntIntHashMap$Core.putInternal(IntIntHashMap.kt:88)                  |&#10;|                      |                                                                                                  |         READ: 0 at IntIntHashMap$Core.putInternal(IntIntHashMap.kt:96)                   |&#10;|                      |                                                                                                  |         switch                                                                           |&#10;|                      | remove(5)                                                                                        |                                                                                          |&#10;|                      |   remove(5): 0 at IntIntHashMapTest.remove(IntIntHashMapTest.kt:25)                              |                                                                                          |&#10;|                      |     putAndRehashWhileNeeded(5,2147483647): 0 at IntIntHashMap.remove(IntIntHashMap.kt:45)        |                                                                                          |&#10;|                      |       core.READ: Core@1 at IntIntHashMap.putAndRehashWhileNeeded(IntIntHashMap.kt:50)            |                                                                                          |&#10;|                      |       putInternal(5,2147483647): 0 at IntIntHashMap.putAndRehashWhileNeeded(IntIntHashMap.kt:50) |                                                                                          |&#10;|                      |         READ: 5 at IntIntHashMap$Core.putInternal(IntIntHashMap.kt:84)                           |                                                                                          |&#10;|                      |         READ: 0 at IntIntHashMap$Core.putInternal(IntIntHashMap.kt:96)                           |                                                                                          |&#10;|                      |         switch                                                                                   |                                                                                          |&#10;|                      |                                                                                                  |         WRITE(10) at IntIntHashMap$Core.putInternal(IntIntHashMap.kt:97)                 |&#10;|                      |                                                                                                  |   result: 0                                                                              |&#10;|                      |                                                                                                  |   thread is finished                                                                     |&#10;|                      |         WRITE(2147483647) at IntIntHashMap$Core.putInternal(IntIntHashMap.kt:97)                 |                                                                                          |&#10;|                      |   result: 0                                                                                      |                                                                                          |&#10;|                      |   thread is finished                                                                             |                                                                                          |&#10;| get(5): 0            |                                                                                                  |                                                                                          |&#10;|   thread is finished |                                                                                                  |                                                                                          |" type="org.jetbrains.kotlinx.lincheck.LincheckAssertionError">org.jetbrains.kotlinx.lincheck.LincheckAssertionError: 
+= Invalid execution results =
+Parallel part:
+| get(5): 0 [-,1,1] | remove(5): 0 | put(5, 10): 0 |
+---
+values in &quot;[..]&quot; brackets indicate the number of completed operations 
+in each of the parallel threads seen at the beginning of the current operation
+---
+
+= The following interleaving leads to the error =
+Parallel part trace:
+|                      |                                                                                                  | put(5, 10)                                                                               |
+|                      |                                                                                                  |   put(5,10): 0 at IntIntHashMapTest.put(IntIntHashMapTest.kt:22)                         |
+|                      |                                                                                                  |     putAndRehashWhileNeeded(5,10): 0 at IntIntHashMap.put(IntIntHashMap.kt:33)           |
+|                      |                                                                                                  |       core.READ: Core@1 at IntIntHashMap.putAndRehashWhileNeeded(IntIntHashMap.kt:50)    |
+|                      |                                                                                                  |       putInternal(5,10): 0 at IntIntHashMap.putAndRehashWhileNeeded(IntIntHashMap.kt:50) |
+|                      |                                                                                                  |         READ: 0 at IntIntHashMap$Core.putInternal(IntIntHashMap.kt:84)                   |
+|                      |                                                                                                  |         READ: 0 at IntIntHashMap$Core.putInternal(IntIntHashMap.kt:85)                   |
+|                      |                                                                                                  |         WRITE(5) at IntIntHashMap$Core.putInternal(IntIntHashMap.kt:88)                  |
+|                      |                                                                                                  |         READ: 0 at IntIntHashMap$Core.putInternal(IntIntHashMap.kt:96)                   |
+|                      |                                                                                                  |         switch                                                                           |
+|                      | remove(5)                                                                                        |                                                                                          |
+|                      |   remove(5): 0 at IntIntHashMapTest.remove(IntIntHashMapTest.kt:25)                              |                                                                                          |
+|                      |     putAndRehashWhileNeeded(5,2147483647): 0 at IntIntHashMap.remove(IntIntHashMap.kt:45)        |                                                                                          |
+|                      |       core.READ: Core@1 at IntIntHashMap.putAndRehashWhileNeeded(IntIntHashMap.kt:50)            |                                                                                          |
+|                      |       putInternal(5,2147483647): 0 at IntIntHashMap.putAndRehashWhileNeeded(IntIntHashMap.kt:50) |                                                                                          |
+|                      |         READ: 5 at IntIntHashMap$Core.putInternal(IntIntHashMap.kt:84)                           |                                                                                          |
+|                      |         READ: 0 at IntIntHashMap$Core.putInternal(IntIntHashMap.kt:96)                           |                                                                                          |
+|                      |         switch                                                                                   |                                                                                          |
+|                      |                                                                                                  |         WRITE(10) at IntIntHashMap$Core.putInternal(IntIntHashMap.kt:97)                 |
+|                      |                                                                                                  |   result: 0                                                                              |
+|                      |                                                                                                  |   thread is finished                                                                     |
+|                      |         WRITE(2147483647) at IntIntHashMap$Core.putInternal(IntIntHashMap.kt:97)                 |                                                                                          |
+|                      |   result: 0                                                                                      |                                                                                          |
+|                      |   thread is finished                                                                             |                                                                                          |
+| get(5): 0            |                                                                                                  |                                                                                          |
+|   thread is finished |                                                                                                  |                                                                                          |
+	at app//org.jetbrains.kotlinx.lincheck.LinChecker.check(LinChecker.kt:50)
+	at app//org.jetbrains.kotlinx.lincheck.LinChecker$Companion.check(LinChecker.kt:210)
+	at app//org.jetbrains.kotlinx.lincheck.LinCheckerKt.check(LinChecker.kt:223)
+	at app//IntIntHashMapTest.modelCheckingTest(IntIntHashMapTest.kt:39)
+	at java.base@18.0.2.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@18.0.2.1/java.lang.reflect.Method.invoke(Method.java:577)
+	at app//org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at app//org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at app//org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at app//org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at app//org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at app//org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at app//org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at app//org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at app//org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at app//org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at app//org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base@18.0.2.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base@18.0.2.1/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Jan 21, 2023 8:32:55 PM com.amazonaws.util.Base64 warn
+WARNING: JAXB is unavailable. Will fallback to SDK implementation which may be less performant.If you are using Java 9+, you will need to include javax.xml.bind:jaxb-api as a dependency.
+]]></system-err>
+</testsuite>

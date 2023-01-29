@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MTStressTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-09-18T20:22:36" hostname="masha-Lenovo-ideapad-530S-15IKB" time="20.155">
+  <properties/>
+  <testcase name="testStress" classname="MTStressTest" time="20.155"/>
+  <system-out><![CDATA[Phase # 1 - done  1,120,686 ops (warm up)
+Phase # 2 - done  1,427,397 ops (warm up)
+Phase # 3 - done  1,799,935 ops (warm up)
+Phase # 4 - done  1,861,783 ops (warm up)
+Phase # 5 - done  1,681,860 ops (warm up)
+Phase # 6 - done  1,816,578 ops (warm up)
+Phase # 7 - done  1,612,842 ops (warm up)
+Phase # 8 - done  1,042,371 ops (warm up)
+Phase # 9 - done  1,046,428 ops (warm up)
+Phase #10 - done  1,036,184 ops (warm up)
+Phase #11 - done  1,061,464 ops (measure)
+Phase #12 - done  1,041,638 ops (measure)
+Phase #13 - done  1,039,555 ops (measure)
+Phase #14 - done  1,076,600 ops (measure)
+Phase #15 - done  1,210,086 ops (measure)
+Phase #16 - done  1,671,990 ops (measure)
+Phase #17 - done  1,657,570 ops (measure)
+Phase #18 - done  1,582,770 ops (measure)
+Phase #19 - done  1,999,954 ops (measure)
+Phase #20 - done  1,019,744 ops (measure)
+Average ops per phase: 1,336,137 +- 357,629
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

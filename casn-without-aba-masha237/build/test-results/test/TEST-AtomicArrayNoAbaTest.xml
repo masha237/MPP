@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AtomicArrayNoAbaTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-01-20T04:36:53" hostname="masha-Lenovo-ideapad-530S-15IKB" time="118.377">
+  <properties/>
+  <testcase name="stressTest" classname="AtomicArrayNoAbaTest" time="25.404"/>
+  <testcase name="modelCheckingTest" classname="AtomicArrayNoAbaTest" time="92.972"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

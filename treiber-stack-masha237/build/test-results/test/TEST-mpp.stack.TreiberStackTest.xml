@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="mpp.stack.TreiberStackTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-12-30T10:14:16" hostname="masha-Lenovo-ideapad-530S-15IKB" time="146.566">
+  <properties/>
+  <testcase name="stressTest" classname="mpp.stack.TreiberStackTest" time="104.738"/>
+  <testcase name="modelCheckingTest" classname="mpp.stack.TreiberStackTest" time="41.827"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

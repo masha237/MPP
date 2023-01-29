@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FCPriorityQueueTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-01-19T00:24:49" hostname="masha-Lenovo-ideapad-530S-15IKB" time="680.338">
+  <properties/>
+  <testcase name="stressTest" classname="FCPriorityQueueTest" time="192.756"/>
+  <testcase name="modelCheckingTest" classname="FCPriorityQueueTest" time="487.582"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="mpp.skiplist.LinkedListTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-01-21T20:59:07" hostname="masha-Lenovo-ideapad-530S-15IKB" time="576.975">
+  <properties/>
+  <testcase name="stressTest" classname="mpp.skiplist.LinkedListTest" time="63.555"/>
+  <testcase name="modelCheckingTest" classname="mpp.skiplist.LinkedListTest" time="513.419"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

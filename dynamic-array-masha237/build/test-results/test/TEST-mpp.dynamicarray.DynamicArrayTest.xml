@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="mpp.dynamicarray.DynamicArrayTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-20T03:40:54" hostname="masha-Lenovo-ideapad-530S-15IKB" time="221.181">
+  <properties/>
+  <testcase name="modelCheckingTest" classname="mpp.dynamicarray.DynamicArrayTest" time="221.181"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dijkstra.ConcurrentStressTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-01-18T13:12:52" hostname="masha-Lenovo-ideapad-530S-15IKB" time="1.59">
+  <properties/>
+  <testcase name="test on small graphs" classname="dijkstra.ConcurrentStressTest" time="0.671"/>
+  <testcase name="test on trees" classname="dijkstra.ConcurrentStressTest" time="0.528"/>
+  <testcase name="test on very small graphs" classname="dijkstra.ConcurrentStressTest" time="0.39"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
